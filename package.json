@@ -1,0 +1,28 @@
+{
+  "name": "simple-jwt",
+  "version": "1.0.0",
+  "description": "Service for generating jwt tokens",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thalen/jwtService.git"
+  },
+  "author": "Olle Thalén",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thalen/jwtService/issues"
+  },
+  "homepage": "https://github.com/thalen/jwtService#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "jsonwebtoken": "^5.7.0",
+    "lodash": "^4.6.1",
+    "lokijs": "^1.3.16",
+    "morgan": "^1.7.0"
+  }
+}
