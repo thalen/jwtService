@@ -5,6 +5,7 @@ var morgan = require('morgan');
 var loki = require('lokijs');
 var jwt = require('jsonwebtoken');
 var config = require('./config');
+var xml = require('xml');
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST
@@ -115,7 +116,8 @@ router.get('/user', function(req, res) {
     var user = {
         user_id: req.decoded.user_id
     };
-    res.json(user);
+    res.set('Content-Type', 'text/xml');
+    res.send(xml(user));
 });
 
 // REGISTER OUR ROUTES -------------------------------
