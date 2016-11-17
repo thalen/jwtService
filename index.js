@@ -114,7 +114,9 @@ router.use(function(req, res, next) {
 
 router.get('/user', function(req, res) {
     var user = {
-        user_id: req.decoded.user_id
+        user: {
+            user_id: req.decoded.user_id
+        }
     };
     res.set('Content-Type', 'text/xml');
     res.send(xml(user));
