@@ -33,6 +33,7 @@ var db = new loki('data.json');
 
 var users = db.addCollection('users');
 users.insert({"user_id": "olltha", "password": "skolverket"});
+users.insert({"user_id": "lisa", "password": "skolverket"});
 
 // test route to make sure everything is working (accessed at GET http://localhost:8080/api)
 router.get('/', function(req, res) {
