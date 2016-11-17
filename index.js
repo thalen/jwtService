@@ -113,14 +113,11 @@ router.use(function(req, res, next) {
 });
 
 router.get('/user', function(req, res) {
-    var foo = {
-        nested: [
-            { keys: [{ fun: 'hi' }]}
-            ]
-    };
     var user = {
         user: [
-            {user_id: req.decoded.user_id}
+            {
+                user_id: req.decoded.user_id
+            }
         ]
     };
     res.set('Content-Type', 'text/xml');
